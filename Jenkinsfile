@@ -4,8 +4,8 @@ pipeline {
     stage('Build') {
       steps {
         dir('./jenkins') {
-           sh "chmod +x gradlew"
-           sh  "gradlew clean build -x test --info"
+           // sh "chmod +x gradlew"
+           sh  "./gradlew clean build --info"
         }
       }
     }
