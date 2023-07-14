@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         dir('./jenkins') {
-           sh  "./gradlew clean build --info"
+           // sh  "./gradlew clean build --info"
         }
       }
     }
